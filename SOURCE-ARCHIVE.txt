@@ -1,0 +1,4 @@
+SAYELF Context Wheel source snapshot v0.1.4.
+Includes Rust/Tauri source, frontend source, build manifests, profiles, assets, and tests.
+Excludes .git history, compiled output, dependency caches, local user settings, and runtime evidence.
+Build instructions are in README.md.

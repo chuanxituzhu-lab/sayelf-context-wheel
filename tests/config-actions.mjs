@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import YAML from 'yaml';
+const evidence=process.argv[2];
+const filename=path.join(evidence,'config','profiles.yaml');
+const config=YAML.parse(fs.readFileSync(filename,'utf8'));
+const p=config.profiles.find(p=>p.id==='default.safe');
+p.wheel.find(s=>s.direction==='NE').action={type:'keystroke',text:'λ测'};
+p.wheel.find(s=>s.direction==='N').action={type:'launch',program:path.join(evidence,'LaunchFixture.exe'),args:[path.join(evidence,'launch-keys.txt')]};
+p.wheel.find(s=>s.direction==='W').action={type:'adapter',id:'test.unimplemented'};
+const cad=config.profiles.find(p=>p.id==='autocad.default');
+const mode=structuredClone(cad);
+mode.id='autocad.model';mode.name='AutoCAD 模型';mode.scope='mode';mode.mode='model';
+mode.outer_rings[0].find(s=>s.direction==='E').label='圆';mode.outer_rings[0].find(s=>s.direction==='E').action={type:'keystroke',text:'_.CIRCLE\n'};
+config.profiles.push(mode);
+fs.writeFileSync(filename,YAML.stringify(config));

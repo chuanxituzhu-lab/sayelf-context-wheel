@@ -1,0 +1,382 @@
+{
+ "line": {
+  "label": "直线",
+  "d": "M4 20 20 4"
+ },
+ "circle": {
+  "label": "圆",
+  "d": "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+ },
+ "polyline": {
+  "label": "多段线",
+  "d": "m3 18 5-12 7 10 6-12"
+ },
+ "rectangle": {
+  "label": "矩形",
+  "d": "M4 5h16v14H4z"
+ },
+ "arc": {
+  "label": "圆弧",
+  "d": "M4 19a8 8 0 0 1 16 0"
+ },
+ "move": {
+  "label": "移动",
+  "d": "M4 12h15m-5-5 5 5-5 5M12 4v16m-4-4 4 4 4-4"
+ },
+ "offset": {
+  "label": "偏移",
+  "d": "M4 7h13M4 17h13m-3-13 4 3-4 3m0 4 4 3-4 3"
+ },
+ "trim": {
+  "label": "修剪",
+  "d": "M4 5 20 19M20 5 4 19m-1-14h3v3m11 11h3v-3"
+ },
+ "copy": {
+  "label": "复制",
+  "d": "M8 8h12v12H8zM4 16V4h12"
+ },
+ "rotate": {
+  "label": "旋转",
+  "d": "M20 8V3l-2 2a8 8 0 1 0 2 10m0-7h-6"
+ },
+ "scale": {
+  "label": "比例缩放",
+  "d": "M4 4h7M4 4v7m16-7h-7m7 0v7M4 20h7m-7 0v-7m16 7h-7m7 0v-7"
+ },
+ "delete": {
+  "label": "删除",
+  "d": "m5 5 14 14M19 5 5 19"
+ },
+ "layer": {
+  "label": "图层",
+  "d": "m3 8 9-5 9 5-9 5-9-5Zm0 5 9 5 9-5m-18 5 9 5 9-5"
+ },
+ "text": {
+  "label": "文字",
+  "d": "M4 5h16M12 5v15m-5 0h10"
+ },
+ "properties": {
+  "label": "特性",
+  "d": "M4 5h16v14H4zM8 9h8M8 13h5"
+ },
+ "command": {
+  "label": "命令",
+  "d": "M4 6h16M4 12h10M4 18h7m9-8-5 4 5 4"
+ },
+ "select": {
+  "label": "选择",
+  "d": "m5 3 14 12-7 1-3 6L5 3Z"
+ },
+ "orbit": {
+  "label": "环绕",
+  "d": "M4 8a9 9 0 0 1 15-3l2 2m-1-5v5h-5M20 16a9 9 0 0 1-15 3l-2-2m1 5v-5h5"
+ },
+ "pan": {
+  "label": "平移",
+  "d": "M12 3v18m-5-13 5-5 5 5M3 12h18m-5-5 5 5-5 5M12 21l-5-5m10 0-5 5"
+ },
+ "zoom": {
+  "label": "视图缩放",
+  "d": "M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm4.5 10.5L21 21M7 10h6m-3-3v6"
+ },
+ "measure": {
+  "label": "测量",
+  "d": "M4 19 19 4l2 2L6 21l-2-2Zm5-5 2 2m2-6 2 2m2-6 2 2"
+ },
+ "material": {
+  "label": "材质",
+  "d": "M12 3 21 8v8l-9 5-9-5V8l9-5Zm-9 5 9 5 9-5m-9 5v8"
+ },
+ "view": {
+  "label": "视图",
+  "d": "M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Zm10-3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+ },
+ "folder": {
+  "label": "文件夹",
+  "d": "M3 6h7l2 2h9v11H3z"
+ },
+ "run": {
+  "label": "运行",
+  "d": "m7 4 13 8-13 8z"
+ },
+ "paste": {
+  "label": "粘贴",
+  "d": "M8 5h8l2 3h3v13H3V8h3l2-3Zm0 0V3h8v2"
+ },
+ "undo": {
+  "label": "撤销",
+  "d": "M9 7 4 12l5 5M4 12h10a6 6 0 0 1 6 6"
+ },
+ "search": {
+  "label": "搜索",
+  "d": "M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm4.5 10.5L21 21"
+ },
+ "window": {
+  "label": "切换窗口",
+  "d": "M3 4h18v16H3zM3 9h18m-13 0v11"
+ },
+ "cut": {
+  "label": "剪切",
+  "d": "M6 15a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm12 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM8 16 18 4M16 16 6 4"
+ },
+ "designcenter": {
+  "label": "设计中心",
+  "d": "M4 4h16v16H4zM8 8h8v8H8z"
+ },
+ "palette": {
+  "label": "工具选项板",
+  "d": "M12 3a9 9 0 1 0 0 18h2a2 2 0 0 0 2-2c0-1-1-2-1-3 0-1.1.9-2 2-2h1a3 3 0 0 0 3-3 8 8 0 0 0-9-8ZM7 12h.1M10 7h.1m5 0h.1m3 5h.1"
+ },
+ "mirror": {
+  "label": "镜像",
+  "d": "M12 3v18M5 6l5 3v6l-5 3zM19 6l-5 3v6l5 3z"
+ },
+ "extend": {
+  "label": "延伸",
+  "d": "M4 20 18 6m-6 0h6v6M4 14v6h6"
+ },
+ "fillet": {
+  "label": "圆角",
+  "d": "M4 20a16 16 0 0 1 16-16M4 14a10 10 0 0 1 10-10"
+ },
+ "chamfer": {
+  "label": "倒角",
+  "d": "M4 20V4h16M4 20 20 4"
+ },
+ "array": {
+  "label": "阵列",
+  "d": "M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"
+ },
+ "polygon": {
+  "label": "多边形",
+  "d": "M12 3l8.5 6.2-3.2 10H6.7l-3.2-10Z"
+ },
+ "ellipse": {
+  "label": "椭圆",
+  "d": "M21 12c0 3.3-4 6-9 6s-9-2.7-9-6 4-6 9-6 9 2.7 9 6Z"
+ },
+ "spline": {
+  "label": "样条曲线",
+  "d": "M3 17c3-9 6-9 9-5s6 4 9-5M3 17h.1M12 12h.1M21 7h.1"
+ },
+ "hatch": {
+  "label": "图案填充",
+  "d": "M4 4h16v16H4zM4 12l8-8M4 20 20 4M12 20l8-8"
+ },
+ "dimension": {
+  "label": "标注",
+  "d": "M4 6v12M20 6v12M4 12h16M4 12l3-2m-3 2 3 2m13-2-3-2m3 2-3 2"
+ },
+ "explode": {
+  "label": "分解",
+  "d": "M9 9 4 4m11 5 5-5M9 15l-5 5m11-5 5 5M4 4h4M4 4v4m16-4h-4m4 0v4M4 20h4m-4 0v-4m16 4h-4m4 0v-4"
+ },
+ "break": {
+  "label": "打断",
+  "d": "M3 12h7m4 0h7M10 8v8M14 8v8"
+ },
+ "stretch": {
+  "label": "拉伸",
+  "d": "M4 6h9v12H4zM13 12h8m-3-3 3 3-3 3"
+ },
+ "join": {
+  "label": "合并",
+  "d": "M3 8h7v8H3m18-8h-7v8h7M10 12h4"
+ },
+ "matchprop": {
+  "label": "特性匹配",
+  "d": "M4 20l7-7M10 7l7 7-3 3-7-7zM14 3l7 7"
+ },
+ "block": {
+  "label": "块",
+  "d": "M12 3 20 7.5v9L12 21l-8-4.5v-9Zm0 0v18M4 7.5l8 4.5 8-4.5"
+ },
+ "insert": {
+  "label": "插入",
+  "d": "M12 3v11m-4-4 4 4 4-4M4 15v5h16v-5"
+ },
+ "fit": {
+  "label": "范围缩放",
+  "d": "M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5M9 9h6v6H9z"
+ },
+ "sheetset": {
+  "label": "图纸集",
+  "d": "M7 3h11v14H7zM4 6v15h11"
+ },
+ "markup": {
+  "label": "标记集",
+  "d": "M5 3h10l4 4v14H5zM8 16l6-6 2 2-6 6H8z"
+ },
+ "calculator": {
+  "label": "计算器",
+  "d": "M5 3h14v18H5zM8 6h8v3H8zM8 13h.1M12 13h.1M16 13h.1M8 17h.1M12 17h.1M16 17h.1"
+ },
+ "fullscreen": {
+  "label": "全屏",
+  "d": "M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"
+ },
+ "osnap": {
+  "label": "对象捕捉",
+  "d": "M6 6h12v12H6zM12 3v4m0 10v4M3 12h4m10 0h4"
+ },
+ "grid": {
+  "label": "栅格",
+  "d": "M4 4h16v16H4zM4 9.3h16M4 14.6h16M9.3 4v16M14.6 4v16"
+ },
+ "ortho": {
+  "label": "正交",
+  "d": "M5 4v16h15M5 20l4-4"
+ },
+ "polar": {
+  "label": "极轴",
+  "d": "M4 20h16M4 20 18 6M4 20a9 9 0 0 1 3-6.7"
+ },
+ "otrack": {
+  "label": "对象追踪",
+  "d": "M4 20 20 4M9 4h.1M14 4h.1M4 9h.1M4 14h.1M20 20l-5-5"
+ },
+ "dynin": {
+  "label": "动态输入",
+  "d": "M3 7h18v10H3zM7 11v2m4-2v2m3-2h4"
+ },
+ "pushpull": {
+  "label": "推拉",
+  "d": "M5 14h14l-3 6H8Zm7-10v9m-4-5 4-4 4 4"
+ },
+ "paint": {
+  "label": "油漆桶",
+  "d": "M5 11 11 5l7 7-6 6-7-7ZM5 11h13M19 15s2 2.3 2 3.5a2 2 0 0 1-4 0c0-1.2 2-3.5 2-3.5Z"
+ },
+ "eraser": {
+  "label": "橡皮擦",
+  "d": "m4 15 9-9 7 7-7 7H8ZM8 11l7 7M8 20h12"
+ },
+ "wall": {
+  "label": "墙",
+  "d": "M3 6h18v12H3zM3 12h18M9 6v6m6 0v6M12 12v6"
+ },
+ "door": {
+  "label": "门",
+  "d": "M5 21V3h11v18M3 21h18M13 12h.1"
+ },
+ "opening": {
+  "label": "窗",
+  "d": "M4 4h16v16H4zM12 4v16M4 12h16"
+ },
+ "axis": {
+  "label": "轴网",
+  "d": "M6 4v16M18 4v16M4 8h16M4 16h16M6 2.5h.1"
+ },
+ "level": {
+  "label": "标高",
+  "d": "M3 16h18M8 16l-3-5h6Zm6-5h7"
+ },
+ "align": {
+  "label": "对齐",
+  "d": "M4 4v16M8 7h12M8 12h8M8 17h11"
+ },
+ "split": {
+  "label": "拆分",
+  "d": "M4 12h16M12 4v5m0 6v5M9 9l6 6"
+ },
+ "hide": {
+  "label": "隐藏",
+  "d": "M3 3l18 18M10.6 6.1A9 9 0 0 1 12 6c6.5 0 10 6 10 6a17 17 0 0 1-2.4 3M6.6 6.6A17 17 0 0 0 2 12s3.5 6 10 6a9 9 0 0 0 4.9-1.4"
+ },
+ "isolate": {
+  "label": "隔离",
+  "d": "M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8ZM3 3h5M3 3v5m18-5h-5m5 0v5M3 21h5m-5 0v-5m18 5h-5m5 0v-5"
+ },
+ "refplane": {
+  "label": "参照平面",
+  "d": "M3 18 9 6h12l-6 12ZM3 12h18"
+ },
+ "visibility": {
+  "label": "可见性",
+  "d": "M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12ZM8 12h8M12 8v8"
+ },
+ "thinline": {
+  "label": "细线",
+  "d": "M3 7h18M3 12h18M3 17h18"
+ },
+ "component": {
+  "label": "构件",
+  "d": "M4 7h16v6H4zM6 13v7m12-7v7M4 7l3-3h10l3 3"
+ },
+ "rebuild": {
+  "label": "重建",
+  "d": "M20 12a8 8 0 1 1-2.4-5.7M20 4v5h-5M10 12l2 2 4-4"
+ },
+ "view_top": {
+  "label": "俯视",
+  "d": "M4 9l8-4 8 4-8 4ZM4 9v7l8 4 8-4V9"
+ },
+ "view_front": {
+  "label": "前视",
+  "d": "M5 8h10v12H5zM5 8l4-4h10l-4 4m4-4v12l-4 4"
+ },
+ "view_right": {
+  "label": "侧视",
+  "d": "M15 8h4v12h-4zM5 8h10v12H5zM5 8l4-4h10"
+ },
+ "view_iso": {
+  "label": "等轴测",
+  "d": "M12 3 20 7.5v9L12 21l-8-4.5v-9Zm0 0M4 7.5l8 4.5 8-4.5M12 12v9"
+ },
+ "view_normal": {
+  "label": "正视于",
+  "d": "M6 6h12v12H6zM12 1v8m-3-3 3 3 3-3"
+ },
+ "view_prev": {
+  "label": "上一视图",
+  "d": "M10 7 5 12l5 5M5 12h9a5 5 0 0 1 5 5M17 4h4v4"
+ },
+ "zoomin": {
+  "label": "放大",
+  "d": "M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm4.5 10.5L21 21M7 10h6m-3-3v6"
+ },
+ "zoomout": {
+  "label": "缩小",
+  "d": "M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm4.5 10.5L21 21M7 10h6"
+ },
+ "shortcutbar": {
+  "label": "快捷栏",
+  "d": "M3 8h18v8H3zM7 11v2m5-2v2m5-2v2"
+ },
+ "redo": {
+  "label": "重做",
+  "d": "M15 7l5 5-5 5M20 12H10a6 6 0 0 0-6 6"
+ },
+ "save": {
+  "label": "保存",
+  "d": "M4 4h13l3 3v13H4zM8 4v5h8V4M7 20v-6h10v6"
+ },
+ "print": {
+  "label": "打印",
+  "d": "M7 9V3h10v6M7 17H4v-8h16v8h-3M7 14h10v7H7z"
+ },
+ "newfile": {
+  "label": "新建",
+  "d": "M6 3h8l4 4v14H6zM14 3v4h4M12 11v6m-3-3h6"
+ },
+ "openfile": {
+  "label": "打开",
+  "d": "M3 7h7l2 2h9v3M3 7v13h15l3-8H7L3 20"
+ },
+ "selectall": {
+  "label": "全选",
+  "d": "M4 4h3M4 4v3m16-3h-3m3 0v3M4 20h3m-3 0v-3m16 3h-3m3 0v-3M10 4h4M10 20h4M4 10v4M20 10v4M8 8h8v8H8z"
+ },
+ "screenshot": {
+  "label": "截图",
+  "d": "M7 3v14h14M3 7h14v14"
+ },
+ "taskmgr": {
+  "label": "任务管理器",
+  "d": "M3 4h18v16H3zM6 15l3-4 3 2 3-5 3 3"
+ },
+ "desktop": {
+  "label": "显示桌面",
+  "d": "M3 4h18v12H3zM8 20h8M12 16v4"
+ }
+}

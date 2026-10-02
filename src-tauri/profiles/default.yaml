@@ -1,0 +1,341 @@
+version: 1
+trigger: xbutton1
+profiles:
+  - id: desktop.default
+    name: Desktop
+    scope: desktop
+    wheel:
+      - direction: N
+        label: 资源管理器
+        action: {"type":"launch","program":"explorer.exe","args":[]}
+      - direction: NE
+        label: 运行
+        action: {"type":"hotkey","keys":["WIN","R"]}
+      - direction: E
+        label: 复制
+        action: {"type":"hotkey","keys":["CTRL","C"]}
+      - direction: SE
+        label: 粘贴
+        action: {"type":"hotkey","keys":["CTRL","V"]}
+      - direction: S
+        label: 全选
+        action: {"type":"hotkey","keys":["CTRL","A"]}
+      - direction: SW
+        label: 撤销
+        action: {"type":"hotkey","keys":["CTRL","Z"]}
+      - direction: W
+        label: 搜索
+        action: {"type":"hotkey","keys":["WIN","S"]}
+      - direction: NW
+        label: 切换窗口
+        action: {"type":"hotkey","keys":["ALT","TAB"]}
+  - id: sketchup.default
+    name: SketchUp
+    scope: application
+    application: SketchUp.exe
+    wheel:
+      - direction: N
+        label: 推拉
+        action: {"type":"hotkey","keys":["P"]}
+      - direction: NE
+        label: 移动
+        action: {"type":"hotkey","keys":["M"]}
+      - direction: E
+        label: 旋转
+        action: {"type":"hotkey","keys":["Q"]}
+      - direction: SE
+        label: 偏移
+        action: {"type":"hotkey","keys":["F"]}
+      - direction: S
+        label: 卷尺
+        action: {"type":"hotkey","keys":["T"]}
+      - direction: SW
+        label: 材质
+        action: {"type":"hotkey","keys":["B"]}
+      - direction: W
+        label: 选择
+        action: {"type":"hotkey","keys":["SPACE"]}
+      - direction: NW
+        label: 环绕
+        action: {"type":"hotkey","keys":["O"]}
+    outer_rings:
+      - - direction: N
+          label: 直线
+          icon: line
+          action: {"type":"hotkey","keys":["L"]}
+        - direction: NNE
+          label: 圆弧
+          icon: arc
+          action: {"type":"hotkey","keys":["A"]}
+        - direction: NE
+          label: 矩形
+          icon: rectangle
+          action: {"type":"hotkey","keys":["R"]}
+        - direction: ENE
+          label: 圆
+          icon: circle
+          action: {"type":"hotkey","keys":["C"]}
+        - direction: E
+          label: 缩放
+          icon: scale
+          action: {"type":"hotkey","keys":["S"]}
+        - direction: ESE
+          label: 橡皮擦
+          icon: eraser
+          action: {"type":"hotkey","keys":["E"]}
+        - direction: SE
+          label: 平移
+          icon: pan
+          action: {"type":"hotkey","keys":["H"]}
+        - direction: SSE
+          label: 视图缩放
+          icon: zoom
+          action: {"type":"hotkey","keys":["Z"]}
+        - direction: S
+          label: 充满视窗
+          icon: fit
+          action: {"type":"hotkey","keys":["SHIFT","Z"]}
+        - direction: SSW
+          label: 复制
+          icon: copy
+          action: {"type":"hotkey","keys":["CTRL","C"]}
+        - direction: SW
+          label: 剪切
+          icon: cut
+          action: {"type":"hotkey","keys":["CTRL","X"]}
+        - direction: WSW
+          label: 粘贴
+          icon: paste
+          action: {"type":"hotkey","keys":["CTRL","V"]}
+        - direction: W
+          label: 撤销
+          icon: undo
+          action: {"type":"hotkey","keys":["CTRL","Z"]}
+        - direction: WNW
+          label: 重做
+          icon: redo
+          action: {"type":"hotkey","keys":["CTRL","Y"]}
+        - direction: NW
+          label: 保存
+          icon: save
+          action: {"type":"hotkey","keys":["CTRL","S"]}
+        - direction: NNW
+          label: 查找
+          icon: search
+          action: {"type":"hotkey","keys":["CTRL","F"]}
+  - id: autocad.default
+    name: AutoCAD
+    scope: application
+    application: acad.exe
+    wheel:
+      - direction: N
+        label: 特性
+        action: {"type":"hotkey","keys":["CTRL","1"]}
+      - direction: NE
+        label: DesignCenter
+        action: {"type":"hotkey","keys":["CTRL","2"]}
+      - direction: E
+        label: 工具选项板
+        action: {"type":"hotkey","keys":["CTRL","3"]}
+      - direction: SE
+        label: 快速计算器
+        action: {"type":"hotkey","keys":["CTRL","8"]}
+      - direction: S
+        label: 命令行
+        action: {"type":"hotkey","keys":["CTRL","9"]}
+      - direction: SW
+        label: 全屏切换
+        action: {"type":"hotkey","keys":["CTRL","0"]}
+      - direction: W
+        label: 图纸集
+        action: {"type":"hotkey","keys":["CTRL","4"]}
+      - direction: NW
+        label: 标记集
+        action: {"type":"hotkey","keys":["CTRL","7"]}
+    outer_rings:
+      - - direction: N
+          label: 直线
+          icon: line
+          action: {"type":"keystroke","text":"^C^C_.LINE\n"}
+        - direction: NNE
+          label: 复制
+          icon: copy
+          action: {"type":"keystroke","text":"^C^C_.COPY\n"}
+        - direction: NE
+          label: 圆
+          icon: circle
+          action: {"type":"keystroke","text":"^C^C_.CIRCLE\n"}
+        - direction: ENE
+          label: 旋转
+          icon: rotate
+          action: {"type":"keystroke","text":"^C^C_.ROTATE\n"}
+        - direction: E
+          label: 多段线
+          icon: polyline
+          action: {"type":"keystroke","text":"^C^C_.PLINE\n"}
+        - direction: ESE
+          label: 镜像
+          icon: mirror
+          action: {"type":"keystroke","text":"^C^C_.MIRROR\n"}
+        - direction: SE
+          label: 矩形
+          icon: rectangle
+          action: {"type":"keystroke","text":"^C^C_.RECTANG\n"}
+        - direction: SSE
+          label: 延伸
+          icon: extend
+          action: {"type":"keystroke","text":"^C^C_.EXTEND\n"}
+        - direction: S
+          label: 圆弧
+          icon: arc
+          action: {"type":"keystroke","text":"^C^C_.ARC\n"}
+        - direction: SSW
+          label: 删除
+          icon: delete
+          action: {"type":"keystroke","text":"^C^C_.ERASE\n"}
+        - direction: SW
+          label: 移动
+          icon: move
+          action: {"type":"keystroke","text":"^C^C_.MOVE\n"}
+        - direction: WSW
+          label: 圆角
+          icon: fillet
+          action: {"type":"keystroke","text":"^C^C_.FILLET\n"}
+        - direction: W
+          label: 偏移
+          icon: offset
+          action: {"type":"keystroke","text":"^C^C_.OFFSET\n"}
+        - direction: WNW
+          label: 倒角
+          icon: chamfer
+          action: {"type":"keystroke","text":"^C^C_.CHAMFER\n"}
+        - direction: NW
+          label: 修剪
+          icon: trim
+          action: {"type":"keystroke","text":"^C^C_.TRIM\n"}
+        - direction: NNW
+          label: 阵列
+          icon: array
+          action: {"type":"keystroke","text":"^C^C_.ARRAY\n"}
+  - id: solidworks.default
+    name: SolidWorks
+    scope: application
+    application: SLDWORKS.exe
+    wheel:
+      - direction: N
+        label: 顶视
+        action: {"type":"hotkey","keys":["CTRL","5"]}
+      - direction: NE
+        label: 右视
+        action: {"type":"hotkey","keys":["CTRL","4"]}
+      - direction: E
+        label: 前视
+        action: {"type":"hotkey","keys":["CTRL","1"]}
+      - direction: SE
+        label: 等轴测
+        action: {"type":"hotkey","keys":["CTRL","7"]}
+      - direction: S
+        label: 底视
+        action: {"type":"hotkey","keys":["CTRL","6"]}
+      - direction: SW
+        label: 左视
+        action: {"type":"hotkey","keys":["CTRL","3"]}
+      - direction: W
+        label: 后视
+        action: {"type":"hotkey","keys":["CTRL","2"]}
+      - direction: NW
+        label: 法向视图
+        action: {"type":"hotkey","keys":["CTRL","8"]}
+    outer_rings:
+      - - direction: N
+          label: 整屏显示
+          icon: fit
+          action: {"type":"hotkey","keys":["F"]}
+        - direction: NNE
+          label: 视图定向
+          icon: orbit
+          action: {"type":"hotkey","keys":["SPACE"]}
+        - direction: NE
+          label: 快捷栏
+          icon: shortcutbar
+          action: {"type":"hotkey","keys":["S"]}
+        - direction: ENE
+          label: 重建
+          icon: rebuild
+          action: {"type":"hotkey","keys":["CTRL","B"]}
+        - direction: E
+          label: 强制重建
+          icon: rebuild
+          action: {"type":"hotkey","keys":["CTRL","Q"]}
+        - direction: ESE
+          label: 上一视图
+          icon: view_prev
+          action: {"type":"hotkey","keys":["CTRL","SHIFT","Z"]}
+        - direction: SE
+          label: 放大
+          icon: zoomin
+          action: {"type":"hotkey","keys":["SHIFT","Z"]}
+        - direction: SSE
+          label: 缩小
+          icon: zoomout
+          action: {"type":"hotkey","keys":["Z"]}
+        - direction: S
+          label: 复制
+          icon: copy
+          action: {"type":"hotkey","keys":["CTRL","C"]}
+        - direction: SSW
+          label: 剪切
+          icon: cut
+          action: {"type":"hotkey","keys":["CTRL","X"]}
+        - direction: SW
+          label: 粘贴
+          icon: paste
+          action: {"type":"hotkey","keys":["CTRL","V"]}
+        - direction: WSW
+          label: 撤销
+          icon: undo
+          action: {"type":"hotkey","keys":["CTRL","Z"]}
+        - direction: W
+          label: 重做
+          icon: redo
+          action: {"type":"hotkey","keys":["CTRL","Y"]}
+        - direction: WNW
+          label: 保存
+          icon: save
+          action: {"type":"hotkey","keys":["CTRL","S"]}
+        - direction: NW
+          label: 查找
+          icon: search
+          action: {"type":"hotkey","keys":["CTRL","F"]}
+        - direction: NNW
+          label: 全选
+          icon: selectall
+          action: {"type":"hotkey","keys":["CTRL","A"]}
+  - id: default.safe
+    name: Default
+    scope: default
+    wheel:
+      - direction: N
+        label: 复制
+        action: {"type":"hotkey","keys":["CTRL","C"]}
+      - direction: NE
+        label: 剪切
+        action: {"type":"hotkey","keys":["CTRL","X"]}
+      - direction: E
+        label: 粘贴
+        action: {"type":"hotkey","keys":["CTRL","V"]}
+      - direction: SE
+        label: 全选
+        action: {"type":"hotkey","keys":["CTRL","A"]}
+      - direction: S
+        label: 撤销
+        action: {"type":"hotkey","keys":["CTRL","Z"]}
+      - direction: SW
+        label: 重做
+        action: {"type":"hotkey","keys":["CTRL","Y"]}
+      - direction: W
+        label: 查找
+        action: {"type":"hotkey","keys":["CTRL","F"]}
+      - direction: NW
+        label: 保存
+        action: {"type":"hotkey","keys":["CTRL","S"]}

@@ -1,0 +1,5 @@
+{
+  "identifier": "studio-dialog",
+  "windows": ["studio"],
+  "permissions": ["dialog:allow-save"]
+}

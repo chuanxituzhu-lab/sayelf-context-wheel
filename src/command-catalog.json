@@ -1,0 +1,1236 @@
+[
+ {
+  "id": "autocad-draw",
+  "name": "AutoCAD · 绘图",
+  "apps": [
+   "acad.exe"
+  ],
+  "items": [
+   {
+    "label": "直线",
+    "icon": "line",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.LINE\n"
+    }
+   },
+   {
+    "label": "多段线",
+    "icon": "polyline",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.PLINE\n"
+    }
+   },
+   {
+    "label": "圆",
+    "icon": "circle",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.CIRCLE\n"
+    }
+   },
+   {
+    "label": "圆弧",
+    "icon": "arc",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.ARC\n"
+    }
+   },
+   {
+    "label": "矩形",
+    "icon": "rectangle",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.RECTANG\n"
+    }
+   },
+   {
+    "label": "多边形",
+    "icon": "polygon",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.POLYGON\n"
+    }
+   },
+   {
+    "label": "椭圆",
+    "icon": "ellipse",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.ELLIPSE\n"
+    }
+   },
+   {
+    "label": "样条曲线",
+    "icon": "spline",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.SPLINE\n"
+    }
+   },
+   {
+    "label": "图案填充",
+    "icon": "hatch",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.HATCH\n"
+    }
+   },
+   {
+    "label": "多行文字",
+    "icon": "text",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.MTEXT\n"
+    }
+   },
+   {
+    "label": "线性标注",
+    "icon": "dimension",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.DIMLINEAR\n"
+    }
+   },
+   {
+    "label": "对齐标注",
+    "icon": "dimension",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.DIMALIGNED\n"
+    }
+   }
+  ]
+ },
+ {
+  "id": "autocad-modify",
+  "name": "AutoCAD · 修改",
+  "apps": [
+   "acad.exe"
+  ],
+  "items": [
+   {
+    "label": "移动",
+    "icon": "move",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.MOVE\n"
+    }
+   },
+   {
+    "label": "复制",
+    "icon": "copy",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.COPY\n"
+    }
+   },
+   {
+    "label": "旋转",
+    "icon": "rotate",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.ROTATE\n"
+    }
+   },
+   {
+    "label": "缩放",
+    "icon": "scale",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.SCALE\n"
+    }
+   },
+   {
+    "label": "镜像",
+    "icon": "mirror",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.MIRROR\n"
+    }
+   },
+   {
+    "label": "偏移",
+    "icon": "offset",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.OFFSET\n"
+    }
+   },
+   {
+    "label": "修剪",
+    "icon": "trim",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.TRIM\n"
+    }
+   },
+   {
+    "label": "延伸",
+    "icon": "extend",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.EXTEND\n"
+    }
+   },
+   {
+    "label": "圆角",
+    "icon": "fillet",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.FILLET\n"
+    }
+   },
+   {
+    "label": "倒角",
+    "icon": "chamfer",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.CHAMFER\n"
+    }
+   },
+   {
+    "label": "阵列",
+    "icon": "array",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.ARRAY\n"
+    }
+   },
+   {
+    "label": "删除",
+    "icon": "delete",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.ERASE\n"
+    }
+   },
+   {
+    "label": "分解",
+    "icon": "explode",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.EXPLODE\n"
+    }
+   },
+   {
+    "label": "打断",
+    "icon": "break",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.BREAK\n"
+    }
+   },
+   {
+    "label": "拉伸",
+    "icon": "stretch",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.STRETCH\n"
+    }
+   },
+   {
+    "label": "合并",
+    "icon": "join",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.JOIN\n"
+    }
+   },
+   {
+    "label": "特性匹配",
+    "icon": "matchprop",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.MATCHPROP\n"
+    }
+   }
+  ]
+ },
+ {
+  "id": "autocad-organize",
+  "name": "AutoCAD · 图层与视图",
+  "apps": [
+   "acad.exe"
+  ],
+  "items": [
+   {
+    "label": "图层",
+    "icon": "layer",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.LAYER\n"
+    }
+   },
+   {
+    "label": "创建块",
+    "icon": "block",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.BLOCK\n"
+    }
+   },
+   {
+    "label": "插入块",
+    "icon": "insert",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.INSERT\n"
+    }
+   },
+   {
+    "label": "测量距离",
+    "icon": "measure",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.DIST\n"
+    }
+   },
+   {
+    "label": "特性",
+    "icon": "properties",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "1"
+     ]
+    }
+   },
+   {
+    "label": "范围缩放",
+    "icon": "fit",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.ZOOM\n_E\n"
+    }
+   },
+   {
+    "label": "实时平移",
+    "icon": "pan",
+    "action": {
+     "type": "keystroke",
+     "text": "^C^C_.PAN\n"
+    }
+   },
+   {
+    "label": "设计中心",
+    "icon": "designcenter",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "2"
+     ]
+    }
+   },
+   {
+    "label": "工具选项板",
+    "icon": "palette",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "3"
+     ]
+    }
+   },
+   {
+    "label": "图纸集管理器",
+    "icon": "sheetset",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "4"
+     ]
+    }
+   },
+   {
+    "label": "标记集管理器",
+    "icon": "markup",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "7"
+     ]
+    }
+   },
+   {
+    "label": "快速计算器",
+    "icon": "calculator",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "8"
+     ]
+    }
+   },
+   {
+    "label": "命令行",
+    "icon": "command",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "9"
+     ]
+    }
+   },
+   {
+    "label": "全屏显示",
+    "icon": "fullscreen",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "0"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "autocad-toggles",
+  "name": "AutoCAD · 辅助开关",
+  "apps": [
+   "acad.exe"
+  ],
+  "items": [
+   {
+    "label": "对象捕捉",
+    "icon": "osnap",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F3"
+     ]
+    }
+   },
+   {
+    "label": "栅格",
+    "icon": "grid",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F7"
+     ]
+    }
+   },
+   {
+    "label": "正交",
+    "icon": "ortho",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F8"
+     ]
+    }
+   },
+   {
+    "label": "极轴",
+    "icon": "polar",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F10"
+     ]
+    }
+   },
+   {
+    "label": "对象追踪",
+    "icon": "otrack",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F11"
+     ]
+    }
+   },
+   {
+    "label": "动态输入",
+    "icon": "dynin",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F12"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "sketchup",
+  "name": "SketchUp · 默认快捷键",
+  "apps": [
+   "sketchup.exe"
+  ],
+  "items": [
+   {
+    "label": "选择",
+    "icon": "select",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "SPACE"
+     ]
+    }
+   },
+   {
+    "label": "直线",
+    "icon": "line",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "L"
+     ]
+    }
+   },
+   {
+    "label": "圆弧",
+    "icon": "arc",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "A"
+     ]
+    }
+   },
+   {
+    "label": "矩形",
+    "icon": "rectangle",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "R"
+     ]
+    }
+   },
+   {
+    "label": "圆",
+    "icon": "circle",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "C"
+     ]
+    }
+   },
+   {
+    "label": "推拉",
+    "icon": "pushpull",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "P"
+     ]
+    }
+   },
+   {
+    "label": "移动",
+    "icon": "move",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "M"
+     ]
+    }
+   },
+   {
+    "label": "旋转",
+    "icon": "rotate",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "Q"
+     ]
+    }
+   },
+   {
+    "label": "缩放",
+    "icon": "scale",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "S"
+     ]
+    }
+   },
+   {
+    "label": "偏移",
+    "icon": "offset",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F"
+     ]
+    }
+   },
+   {
+    "label": "卷尺",
+    "icon": "measure",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "T"
+     ]
+    }
+   },
+   {
+    "label": "油漆桶",
+    "icon": "paint",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "B"
+     ]
+    }
+   },
+   {
+    "label": "橡皮擦",
+    "icon": "eraser",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "E"
+     ]
+    }
+   },
+   {
+    "label": "环绕",
+    "icon": "orbit",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "O"
+     ]
+    }
+   },
+   {
+    "label": "平移",
+    "icon": "pan",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "H"
+     ]
+    }
+   },
+   {
+    "label": "视图缩放",
+    "icon": "zoom",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "Z"
+     ]
+    }
+   },
+   {
+    "label": "充满视窗",
+    "icon": "fit",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "SHIFT",
+      "Z"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "solidworks",
+  "name": "SolidWorks · 视图与常用",
+  "apps": [
+   "sldworks.exe"
+  ],
+  "items": [
+   {
+    "label": "前视",
+    "icon": "view_front",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "1"
+     ]
+    }
+   },
+   {
+    "label": "后视",
+    "icon": "view_front",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "2"
+     ]
+    }
+   },
+   {
+    "label": "左视",
+    "icon": "view_right",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "3"
+     ]
+    }
+   },
+   {
+    "label": "右视",
+    "icon": "view_right",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "4"
+     ]
+    }
+   },
+   {
+    "label": "上视",
+    "icon": "view_top",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "5"
+     ]
+    }
+   },
+   {
+    "label": "下视",
+    "icon": "view_top",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "6"
+     ]
+    }
+   },
+   {
+    "label": "等轴测",
+    "icon": "view_iso",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "7"
+     ]
+    }
+   },
+   {
+    "label": "正视于",
+    "icon": "view_normal",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "8"
+     ]
+    }
+   },
+   {
+    "label": "整屏显示",
+    "icon": "fit",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "F"
+     ]
+    }
+   },
+   {
+    "label": "视图定向",
+    "icon": "orbit",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "SPACE"
+     ]
+    }
+   },
+   {
+    "label": "快捷栏",
+    "icon": "shortcutbar",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "S"
+     ]
+    }
+   },
+   {
+    "label": "重建",
+    "icon": "rebuild",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "B"
+     ]
+    }
+   },
+   {
+    "label": "强制重建",
+    "icon": "rebuild",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "Q"
+     ]
+    }
+   },
+   {
+    "label": "上一视图",
+    "icon": "view_prev",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "SHIFT",
+      "Z"
+     ]
+    }
+   },
+   {
+    "label": "放大",
+    "icon": "zoomin",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "SHIFT",
+      "Z"
+     ]
+    }
+   },
+   {
+    "label": "缩小",
+    "icon": "zoomout",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "Z"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "revit",
+  "name": "Revit · 默认快捷键（需实机验证）",
+  "apps": [
+   "revit.exe"
+  ],
+  "items": [
+   {
+    "label": "墙",
+    "icon": "wall",
+    "action": {
+     "type": "keystroke",
+     "text": "WA"
+    }
+   },
+   {
+    "label": "门",
+    "icon": "door",
+    "action": {
+     "type": "keystroke",
+     "text": "DR"
+    }
+   },
+   {
+    "label": "窗",
+    "icon": "opening",
+    "action": {
+     "type": "keystroke",
+     "text": "WN"
+    }
+   },
+   {
+    "label": "构件",
+    "icon": "component",
+    "action": {
+     "type": "keystroke",
+     "text": "CM"
+    }
+   },
+   {
+    "label": "轴网",
+    "icon": "axis",
+    "action": {
+     "type": "keystroke",
+     "text": "GR"
+    }
+   },
+   {
+    "label": "标高",
+    "icon": "level",
+    "action": {
+     "type": "keystroke",
+     "text": "LL"
+    }
+   },
+   {
+    "label": "对齐尺寸",
+    "icon": "dimension",
+    "action": {
+     "type": "keystroke",
+     "text": "DI"
+    }
+   },
+   {
+    "label": "参照平面",
+    "icon": "refplane",
+    "action": {
+     "type": "keystroke",
+     "text": "RP"
+    }
+   },
+   {
+    "label": "对齐",
+    "icon": "align",
+    "action": {
+     "type": "keystroke",
+     "text": "AL"
+    }
+   },
+   {
+    "label": "移动",
+    "icon": "move",
+    "action": {
+     "type": "keystroke",
+     "text": "MV"
+    }
+   },
+   {
+    "label": "复制",
+    "icon": "copy",
+    "action": {
+     "type": "keystroke",
+     "text": "CO"
+    }
+   },
+   {
+    "label": "旋转",
+    "icon": "rotate",
+    "action": {
+     "type": "keystroke",
+     "text": "RO"
+    }
+   },
+   {
+    "label": "镜像",
+    "icon": "mirror",
+    "action": {
+     "type": "keystroke",
+     "text": "MM"
+    }
+   },
+   {
+    "label": "偏移",
+    "icon": "offset",
+    "action": {
+     "type": "keystroke",
+     "text": "OF"
+    }
+   },
+   {
+    "label": "阵列",
+    "icon": "array",
+    "action": {
+     "type": "keystroke",
+     "text": "AR"
+    }
+   },
+   {
+    "label": "修剪/延伸",
+    "icon": "trim",
+    "action": {
+     "type": "keystroke",
+     "text": "TR"
+    }
+   },
+   {
+    "label": "拆分图元",
+    "icon": "split",
+    "action": {
+     "type": "keystroke",
+     "text": "SL"
+    }
+   },
+   {
+    "label": "删除",
+    "icon": "delete",
+    "action": {
+     "type": "keystroke",
+     "text": "DE"
+    }
+   },
+   {
+    "label": "临时隐藏",
+    "icon": "hide",
+    "action": {
+     "type": "keystroke",
+     "text": "HH"
+    }
+   },
+   {
+    "label": "临时隔离",
+    "icon": "isolate",
+    "action": {
+     "type": "keystroke",
+     "text": "HI"
+    }
+   },
+   {
+    "label": "重设临时隐藏",
+    "icon": "view",
+    "action": {
+     "type": "keystroke",
+     "text": "HR"
+    }
+   },
+   {
+    "label": "可见性",
+    "icon": "visibility",
+    "action": {
+     "type": "keystroke",
+     "text": "VV"
+    }
+   },
+   {
+    "label": "细线",
+    "icon": "thinline",
+    "action": {
+     "type": "keystroke",
+     "text": "TL"
+    }
+   },
+   {
+    "label": "属性",
+    "icon": "properties",
+    "action": {
+     "type": "keystroke",
+     "text": "PP"
+    }
+   }
+  ]
+ },
+ {
+  "id": "general",
+  "name": "通用（所有软件）",
+  "apps": [
+   "*"
+  ],
+  "items": [
+   {
+    "label": "复制",
+    "icon": "copy",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "C"
+     ]
+    }
+   },
+   {
+    "label": "剪切",
+    "icon": "cut",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "X"
+     ]
+    }
+   },
+   {
+    "label": "粘贴",
+    "icon": "paste",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "V"
+     ]
+    }
+   },
+   {
+    "label": "撤销",
+    "icon": "undo",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "Z"
+     ]
+    }
+   },
+   {
+    "label": "重做",
+    "icon": "redo",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "Y"
+     ]
+    }
+   },
+   {
+    "label": "保存",
+    "icon": "save",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "S"
+     ]
+    }
+   },
+   {
+    "label": "查找",
+    "icon": "search",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "F"
+     ]
+    }
+   },
+   {
+    "label": "全选",
+    "icon": "selectall",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "A"
+     ]
+    }
+   },
+   {
+    "label": "打印",
+    "icon": "print",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "P"
+     ]
+    }
+   },
+   {
+    "label": "新建",
+    "icon": "newfile",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "N"
+     ]
+    }
+   },
+   {
+    "label": "打开",
+    "icon": "openfile",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "O"
+     ]
+    }
+   },
+   {
+    "label": "截图",
+    "icon": "screenshot",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "WIN",
+      "SHIFT",
+      "S"
+     ]
+    }
+   },
+   {
+    "label": "任务管理器",
+    "icon": "taskmgr",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "CTRL",
+      "SHIFT",
+      "ESC"
+     ]
+    }
+   },
+   {
+    "label": "资源管理器",
+    "icon": "folder",
+    "action": {
+     "type": "launch",
+     "program": "explorer.exe",
+     "args": []
+    }
+   },
+   {
+    "label": "运行",
+    "icon": "run",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "WIN",
+      "R"
+     ]
+    }
+   },
+   {
+    "label": "搜索",
+    "icon": "search",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "WIN",
+      "S"
+     ]
+    }
+   },
+   {
+    "label": "切换窗口",
+    "icon": "window",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "ALT",
+      "TAB"
+     ]
+    }
+   },
+   {
+    "label": "显示桌面",
+    "icon": "desktop",
+    "action": {
+     "type": "hotkey",
+     "keys": [
+      "WIN",
+      "D"
+     ]
+    }
+   }
+  ]
+ }
+]

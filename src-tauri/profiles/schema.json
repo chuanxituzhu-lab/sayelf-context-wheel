@@ -1,0 +1,362 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Context Wheel v1",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "version",
+        "trigger",
+        "profiles"
+    ],
+    "properties": {
+        "version": {
+            "const": 1
+        },
+        "trigger": {
+            "enum": [
+                "xbutton1",
+                "xbutton2",
+                "middle"
+            ]
+        },
+        "profiles": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "id",
+                    "name",
+                    "scope",
+                    "wheel"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "name": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "scope": {
+                        "enum": [
+                            "application",
+                            "mode",
+                            "desktop",
+                            "default"
+                        ]
+                    },
+                    "application": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "mode": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "wheel": {
+                        "type": "array",
+                        "minItems": 8,
+                        "maxItems": 8,
+                        "items": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/sector"
+                                },
+                                {
+                                    "properties": {
+                                        "direction": {
+                                            "enum": [
+                                                "N",
+                                                "NE",
+                                                "E",
+                                                "SE",
+                                                "S",
+                                                "SW",
+                                                "W",
+                                                "NW"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "outer_rings": {
+                        "type": "array",
+                        "maxItems": 2,
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sector"
+                            },
+                            "minItems": 1,
+                            "maxItems": 24
+                        }
+                    }
+                },
+                "allOf": [
+                    {
+                        "if": {
+                            "properties": {
+                                "scope": {
+                                    "const": "application"
+                                }
+                            }
+                        },
+                        "then": {
+                            "required": [
+                                "application"
+                            ]
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "scope": {
+                                    "const": "mode"
+                                }
+                            }
+                        },
+                        "then": {
+                            "required": [
+                                "application",
+                                "mode"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "sector": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "direction",
+                "label",
+                "action"
+            ],
+            "properties": {
+                "direction": {
+                    "anyOf": [
+                        {
+                            "enum": [
+                                "N",
+                                "NNE",
+                                "NE",
+                                "ENE",
+                                "E",
+                                "ESE",
+                                "SE",
+                                "SSE",
+                                "S",
+                                "SSW",
+                                "SW",
+                                "WSW",
+                                "W",
+                                "WNW",
+                                "NW",
+                                "NNW"
+                            ]
+                        },
+                        {
+                            "type": "string",
+                            "pattern": "^P(0[1-9]|1[0-9]|2[0-4])$"
+                        }
+                    ]
+                },
+                "enabled": {
+                    "type": "boolean"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "icon": {
+                    "type": "string",
+                    "enum": [
+                        "line",
+                        "circle",
+                        "polyline",
+                        "rectangle",
+                        "arc",
+                        "move",
+                        "offset",
+                        "trim",
+                        "copy",
+                        "rotate",
+                        "scale",
+                        "delete",
+                        "layer",
+                        "text",
+                        "properties",
+                        "command",
+                        "select",
+                        "orbit",
+                        "pan",
+                        "zoom",
+                        "measure",
+                        "material",
+                        "view",
+                        "folder",
+                        "run",
+                        "paste",
+                        "undo",
+                        "search",
+                        "window",
+                        "cut",
+                        "designcenter",
+                        "palette",
+                        "mirror",
+                        "extend",
+                        "fillet",
+                        "chamfer",
+                        "array",
+                        "polygon",
+                        "ellipse",
+                        "spline",
+                        "hatch",
+                        "dimension",
+                        "explode",
+                        "break",
+                        "stretch",
+                        "join",
+                        "matchprop",
+                        "block",
+                        "insert",
+                        "fit",
+                        "sheetset",
+                        "markup",
+                        "calculator",
+                        "fullscreen",
+                        "osnap",
+                        "grid",
+                        "ortho",
+                        "polar",
+                        "otrack",
+                        "dynin",
+                        "pushpull",
+                        "paint",
+                        "eraser",
+                        "wall",
+                        "door",
+                        "opening",
+                        "axis",
+                        "level",
+                        "align",
+                        "split",
+                        "hide",
+                        "isolate",
+                        "refplane",
+                        "visibility",
+                        "thinline",
+                        "component",
+                        "rebuild",
+                        "view_top",
+                        "view_front",
+                        "view_right",
+                        "view_iso",
+                        "view_normal",
+                        "view_prev",
+                        "zoomin",
+                        "zoomout",
+                        "shortcutbar",
+                        "redo",
+                        "save",
+                        "print",
+                        "newfile",
+                        "openfile",
+                        "selectall",
+                        "screenshot",
+                        "taskmgr",
+                        "desktop"
+                    ]
+                },
+                "action": {
+                    "oneOf": [
+                        {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                                "type",
+                                "keys"
+                            ],
+                            "properties": {
+                                "type": {
+                                    "const": "hotkey"
+                                },
+                                "keys": {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                                "type",
+                                "text"
+                            ],
+                            "properties": {
+                                "type": {
+                                    "const": "keystroke"
+                                },
+                                "text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                                "type",
+                                "program"
+                            ],
+                            "properties": {
+                                "type": {
+                                    "const": "launch"
+                                },
+                                "program": {
+                                    "type": "string",
+                                    "minLength": 1
+                                },
+                                "args": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                                "type",
+                                "id"
+                            ],
+                            "properties": {
+                                "type": {
+                                    "const": "adapter"
+                                },
+                                "id": {
+                                    "type": "string",
+                                    "minLength": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "$comment": "icon enum is generated from src/icons.json (tests/schema.mjs checks they match). Outer rings: 8 or 16 compass slots (normal), or 1-24 slots with ids P01..P24."
+}
