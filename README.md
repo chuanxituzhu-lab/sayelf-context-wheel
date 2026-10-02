@@ -14,7 +14,7 @@ Context Wheel 是面向 CAD 和其他专业软件的本地鼠标轮盘。按住�
 
 **最新版本：v0.1.4 · Windows x64 安装包**
 
-[下载 Context Wheel 安装程序](https://github.com/chuanxituzhu-lab/sayelf-context-wheel/releases/latest/download/Context%20Wheel_0.1.4_x64-setup.exe)
+[下载 Context Wheel 安装程序](https://github.com/chuanxituzhu-lab/sayelf-context-wheel/releases/latest/download/Context.Wheel_0.1.4_x64-setup.exe)
 
 README 会随每次版本更新指向 GitHub 最新版本的安装包。安装包尚未代码签名，Windows 可能显示未知发布者提示。
 
@@ -53,7 +53,7 @@ Context Wheel is a local-first mouse marking menu for CAD and other professional
 
 **Latest release: v0.1.4 · Windows x64 installer**
 
-[Download the Context Wheel installer](https://github.com/chuanxituzhu-lab/sayelf-context-wheel/releases/latest/download/Context%20Wheel_0.1.4_x64-setup.exe)
+[Download the Context Wheel installer](https://github.com/chuanxituzhu-lab/sayelf-context-wheel/releases/latest/download/Context.Wheel_0.1.4_x64-setup.exe)
 
 This README points to the latest versioned GitHub release. The installer is unsigned; Windows may show an unknown publisher warning.
 
